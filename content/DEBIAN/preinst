@@ -2,6 +2,8 @@
 
 if [ $1 == "install" -o $1 == "upgrade" ]; then
 
+	adduser --system iguanair --group --no-create-home
+
 	/etc/init.d/lirc stop 1>/dev/null 2>/dev/null >/dev/null
 
 	if [ -f /etc/lirc/lircd.conf ]; then

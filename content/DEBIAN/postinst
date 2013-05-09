@@ -40,9 +40,10 @@ cat<<\EOF >/etc/lirc/hardware/custom.conf
 #LIRCMD_CONF=""
 EOF
 	fi
+	ldconfig || true 
 
-	/etc/init.d/iguanaIR start 1>/dev/null 2>/dev/null >/dev/null
-	update-rc.d iguanaIR defaults &>/dev/null
+	/etc/init.d/iguanaIR start || true
+	update-rc.d iguanaIR defaults || true 
 
-	/etc/init.d/lirc start 1>/dev/null 2>/dev/null >/dev/null
+	/etc/init.d/lirc start || true 
 fi
