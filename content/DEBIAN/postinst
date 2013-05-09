@@ -1,0 +1,48 @@
+#!/bin/bash
+
+if [ $1 == "configure" ]; then
+
+	if [ -f /usr/local/lib/liblirc_client.so.0 ]; then
+		rm /usr/local/lib/liblirc_client.so.0;
+	fi
+
+	if [ -f /usr/local/lib/liblirc_client.so ]; then
+		rm /usr/local/lib/liblirc_client.so;
+	fi
+
+	ln -s /usr/local/lib/liblirc_client.so.0.2.1 /usr/local/lib/liblirc_client.so.0
+	ln -s /usr/local/lib/liblirc_client.so.0.2.1 /usr/local/lib/liblirc_client.so
+
+	if [ ! -f "/etc/lirc/hardware/custom.conf" ]; then
+cat<<\EOF >/etc/lirc/hardware/custom.conf
+# /etc/lirc/hardware/custom.conf
+#
+# Arguments which will be used when launching lircd
+#LIRCD_ARGS=""
+
+#Don't start lircmd even if there seems to be a good config file
+#START_LIRCMD=false
+
+#Don't start irexec, even if a good config file seems to exist.
+#START_IREXEC=false
+
+#Try to load appropriate kernel modules
+#LOAD_MODULES=false
+
+# Run "lircd --driver=help" for a list of supported drivers.
+#DRIVER=""
+# usually /dev/lirc0 is the correct setting for systems using udev
+#DEVICE=""
+#MODULES=""
+
+# Default configuration files for your hardware if any
+#LIRCD_CONF=""
+#LIRCMD_CONF=""
+EOF
+	fi
+
+	/etc/init.d/iguanaIR start 1>/dev/null 2>/dev/null >/dev/null
+	update-rc.d iguanaIR defaults &>/dev/null
+
+	/etc/init.d/lirc start 1>/dev/null 2>/dev/null >/dev/null
+fi
