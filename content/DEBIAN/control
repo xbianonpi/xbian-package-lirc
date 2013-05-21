@@ -9,4 +9,3 @@ Replaces: xbian-package-lirc (<=1.3)
 Conflicts: lirc
 Maintainer: Koenkk <development@xbian.org>
 Description: Remote controller deamon.
-Installed-Size: 2728
