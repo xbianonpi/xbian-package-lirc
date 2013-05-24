@@ -4,7 +4,8 @@ if [ $1 == "install" -o $1 == "upgrade" ]; then
 
 	adduser --system iguanair --group --no-create-home
 
-	/etc/init.d/lirc stop 1>/dev/null 2>/dev/null >/dev/null
+	/etc/init.d/lirc stop >/dev/null 2>&1
+	/etc/init.d/iguanaIR stop >/dev/null 2>&1
 
 	if [ -f /etc/lirc/lircd.conf ]; then
 		mv --backup=t /etc/lirc/lircd.conf /etc/lirc/lircd.conf.xbian
