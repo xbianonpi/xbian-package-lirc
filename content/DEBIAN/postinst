@@ -42,8 +42,7 @@ EOF
 	fi
 	ldconfig || true 
 
-	/etc/init.d/iguanaIR start || true
-	update-rc.d iguanaIR defaults || true 
+	insserv -r iguanaIR || true
 
 	/etc/init.d/lirc start || true 
 fi
