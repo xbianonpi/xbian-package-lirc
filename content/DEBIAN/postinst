@@ -44,5 +44,5 @@ EOF
 
 	insserv -rf iguanaIR &>/dev/null || true
 
-	/etc/init.d/lirc start || true 
+	start lirc || true 
 fi
