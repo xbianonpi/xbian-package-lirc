@@ -43,6 +43,7 @@ EOF
 	ldconfig || true 
 
 	insserv -rf iguanaIR &>/dev/null || true
+	insserv -fr lirc &>/dev/null || true
 
 	start lirc || true 
 fi
