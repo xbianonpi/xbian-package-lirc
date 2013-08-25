@@ -1,6 +1,6 @@
 Origin: XBian
 Package: xbian-package-lirc
-Version: 1.4-8
+Version: 1.4-8.1
 Section: utils
 Essential: No
 Priority: optional
