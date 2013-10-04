@@ -4,8 +4,5 @@ if [ $1 == "install" -o $1 == "upgrade" ]; then
 
 	adduser --system iguanair --group --no-create-home
 
-	/etc/init.d/lirc stop >/dev/null 2>&1
-	/etc/init.d/iguanaIR stop >/dev/null 2>&1
-
 
 fi

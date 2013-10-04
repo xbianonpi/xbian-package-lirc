@@ -2,6 +2,8 @@
 
 if [ $1 == "configure" ]; then
 
+        touch /run/reboot-required
+
 	if [ -f /usr/local/lib/liblirc_client.so.0 ]; then
 		rm /usr/local/lib/liblirc_client.so.0;
 	fi
@@ -45,5 +47,5 @@ EOF
 	insserv -rf iguanaIR &>/dev/null || true
 	insserv -fr lirc &>/dev/null || true
 
-	start lirc || true 
+	start -q lirc || true 
 fi
