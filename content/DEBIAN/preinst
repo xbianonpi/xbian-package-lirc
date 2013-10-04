@@ -1,5 +1,7 @@
 #!/bin/bash
 
+stop lirc &>/dev/null
+
 if [ $1 == "install" -o $1 == "upgrade" ]; then
 
 	adduser --system iguanair --group --no-create-home

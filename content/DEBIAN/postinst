@@ -47,5 +47,5 @@ EOF
 	insserv -rf iguanaIR &>/dev/null || true
 	insserv -fr lirc &>/dev/null || true
 
-	start -q lirc || true 
+	start -q lirc &>/dev/null || true 
 fi
