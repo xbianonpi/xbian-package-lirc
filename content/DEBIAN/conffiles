@@ -1,6 +1,7 @@
 etc/default/iguanaIR
 etc/lirc/lircd.conf
 etc/lirc/lircmd.conf
+etc/lirc/remotes/apple-a1156.conf
 etc/lirc/remotes/devinput.conf
 etc/lirc/remotes/mceusb.conf
 etc/lirc/remotes/smt1000t.conf
