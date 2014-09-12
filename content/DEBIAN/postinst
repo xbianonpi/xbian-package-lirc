@@ -2,7 +2,7 @@
 
 if [ $1 == "configure" ]; then
 
-        touch /run/reboot-required
+        echo "xbian-package-lirc" >> /run/reboot-required
 
 	if [ -f /usr/local/lib/liblirc_client.so.0 ]; then
 		rm /usr/local/lib/liblirc_client.so.0;
