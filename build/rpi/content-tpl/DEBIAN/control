@@ -1,12 +1,13 @@
 Origin: XBian
 Package: xbian-package-lirc
-Version: 1.5.1
+Version: __VERSION__
 Section: utils
 Essential: No
 Priority: optional
 Architecture: armhf
-Depends: upstart
+__PKGDEPS__
 Replaces: lirc, iguanair
 Conflicts: lirc, iguanair
-Maintainer: Koenkk <development@xbian.org>
+__CTRLEXTRA__
+Maintainer: CurlyMo <development@xbian.org>
 Description: Remote controller deamon.

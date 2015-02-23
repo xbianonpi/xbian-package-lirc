@@ -1,0 +1,2 @@
+sed -i "s%__VERSION__*%$(date +%Y%m%d)%g" DEBIAN/*
+

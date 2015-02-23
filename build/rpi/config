@@ -1,0 +1,4 @@
+config_source_configure=./configure --with-driver=userspace
+config_build_env=schroot -c armhfwheezy -p --
+config_source_type=tar
+config_source_addr=http://archive.ubuntu.com/ubuntu/pool/main/l/lirc/lirc_0.9.0.orig.tar.bz2

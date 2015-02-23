@@ -1,2 +1,13 @@
 .DS_Store
 md5sums
+content/*
+build/*/working*
+build/vexpress
+build.*
+*.deb
+._*
+src_repo_hash_HEAD
+config_pkgver
+config_aptdir
+SPL
+u-boot.img
