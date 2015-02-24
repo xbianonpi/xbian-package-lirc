@@ -1,2 +1,2 @@
-schroot -c armhfwheezy -p -- automake
-schroot -c armhfwheezy -p -- autoconf
+schroot -c armhfwheezy -p -- bash ./autogen.sh
+
