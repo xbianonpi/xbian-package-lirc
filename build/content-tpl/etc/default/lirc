@@ -1,0 +1,4 @@
+# In case of X10 remotes please set this variable
+# to x10-atiwonder, x10-medion or x10-or32e
+
+X10_CONF="x10-medion"
