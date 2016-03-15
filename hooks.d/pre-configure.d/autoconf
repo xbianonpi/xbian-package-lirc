@@ -1,4 +1,6 @@
 
 [ ! -e $XBIANROOT/common.functions ] || . $XBIANROOT/common.functions && { [ ! -e ../env ] || rexp ../env; }
 
-eval $config_build_env -- bash ./autogen.sh 
+chmod +x ./autogen.sh
+
+eval $config_build_env ./autogen.sh
