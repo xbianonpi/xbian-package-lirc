@@ -1,0 +1,74 @@
+<!-- This file contains the mapping of LIRC keys to XBMC keys used in Keymap.xml  -->
+<!--                                                                              -->
+<!-- How to add remotes                                                           -->
+<!-- <remote device="name_Lirc_calls_the_remote">                                 -->
+<!--                                                                              -->
+<!-- For the commands the layout following layout is used                         -->
+<!-- <XBMC_COMMAND>LircButtonName</XBMC_COMMAND>                                  -->
+<!--                                                                              -->
+<!-- For a list of XBMC_COMMAND's check out the <remote> sections of keymap.xml   -->
+
+<lircmap>
+	<remote device="X10-OR32E">
+	<altname>X10-MEDION</altname>
+	<altname>X10-ATIWONDER</altname>
+		<one>KEY_1</one>
+		<two>KEY_2</two>
+		<three>KEY_3</three>
+		<four>KEY_4</four>
+		<five>KEY_5</five>
+		<six>KEY_6</six>
+		<seven>KEY_7</seven>
+		<eight>KEY_8</eight>
+		<nine>KEY_9</nine>
+		<zero>KEY_0</zero>
+		<pause>KEY_PAUSE</pause>
+		<stop>KEY_STOP</stop>
+		<forward>KEY_FASTFORWARD</forward>
+		<reverse>KEY_REWIND</reverse>
+		<left>KEY_LEFT</left>
+		<right>KEY_RIGHT</right>
+		<up>KEY_UP</up>
+		<down>KEY_DOWN</down>
+		<select>KEY_OK</select>
+		<pageplus>KEY_CHANNELUP</pageplus>
+		<pageminus>KEY_CHANNELDOWN</pageminus>
+		<back>KEY_BACK</back>
+		<clear>KEY_CLEAR</clear>
+		<clear>KEY_RENAME</clear>
+		<clear>KEY_C</clear>
+		<play>KEY_PLAY</play>
+		<info>KEY_INFO</info>
+		<skipplus>KEY_NEXT</skipplus>
+		<skipminus>KEY_PREVIOUS</skipminus>
+		<teletext>KEY_TEXT</teletext>
+		<subtitle>KEY_WINDOWS</subtitle>
+		<guide>KEY_EPG</guide>
+		<guide>KEY_SETUP</guide>
+		<display>KEY_WINDOWS</display>
+		<record>KEY_RECORD</record>
+		<volumeplus>KEY_VOLUMEUP</volumeplus>
+		<volumeminus>KEY_VOLUMEDOWN</volumeminus>
+		<mute>KEY_MUTE</mute>
+		<power>KEY_POWER</power>
+		<myvideo>KEY_VIDEO</myvideo>
+		<myvideo>KEY_VCR</myvideo>
+		<mymusic>KEY_MUSIC</mymusic>
+		<mypictures>KEY_PHOTO</mypictures>
+		<mytv>KEY_LIVETV</mytv>
+		<mytv>KEY_TV</mytv>
+		<liveradio>KEY_RADIO</liveradio>
+		<red>KEY_RED</red>
+		<green>KEY_GREEN</green>
+		<yellow>KEY_YELLOW</yellow>
+		<blue>KEY_BLUE</blue>
+		<star>KEY_*</star>
+		<star>KEY_E</star>
+		<hash>KEY_#</hash>
+		<hash>KEY_F</hash>
+		<menu>KEY_DVDMENU</menu>
+		<start>KEY_FULLSCREEN</start>
+		<start>KEY_HOME</start>
+		<recordedtv>KEY_RECORDEDTV</recordedtv>
+	</remote>
+</lircmap>
