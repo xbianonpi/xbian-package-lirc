@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $1 == "remove" ]; then
+
+	stop lirc  1>/dev/null 2>/dev/null >/dev/null || :
+
+fi
