@@ -1,2 +1,4 @@
-schroot -c armhfwheezy -p -- bash ./autogen.sh
 
+[ ! -e $XBIANROOT/common.functions ] || . $XBIANROOT/common.functions && { [ ! -e ../env ] || rexp ../env; }
+
+eval $config_build_env -- bash ./autogen.sh 

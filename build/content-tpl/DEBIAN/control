@@ -9,5 +9,5 @@ __PKGDEPS__
 Replaces: lirc, iguanair
 Conflicts: lirc, iguanair
 __CTRLEXTRA__
-Maintainer: CurlyMo <development@xbian.org>
+Maintainer: mkreisl <development@xbian.org>
 Description: Remote controller deamon.
