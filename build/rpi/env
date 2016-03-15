@@ -1,0 +1,3 @@
+CFLAGS=-pipe -O3 -mcpu=arm1176jzf-s -mtune=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp -mabi=aapcs-linux -Wno-psabi -Wa,-mno-warn-deprecated -Wno-deprecated-declarations
+CPPFLAGS=$CFLAGS
+CXXFLAGS=$CFLAGS

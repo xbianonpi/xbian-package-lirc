@@ -1,0 +1,8 @@
+CC=/usr/bin/arm-linux-gnueabihf-gcc
+CXX=/usr/bin/arm-linux-gnueabihf-g++
+CPP=/usr/bin/arm-linux-gnueabihf-gcc -E
+LD=/usr/bin/arm-linux-gnueabihf-ld.gold
+OS=linux
+CFLAGS=-O3 -g -pipe -mtune=cortex-a7 -mcpu=cortex-a7 -mfloat-abi=hard -mfpu=neon -mabi=aapcs-linux -Wno-psabi -Wa,-mno-warn-deprecated -Wno-deprecated-declarations
+CPPFLAGS=$CFLAGS
+CXXFLAGS=$CFLAGS
