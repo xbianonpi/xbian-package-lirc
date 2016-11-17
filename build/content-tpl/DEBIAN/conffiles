@@ -9,7 +9,7 @@ etc/lirc/remotes/smt1000t.conf
 etc/lirc/remotes/speedlink.xml
 etc/lirc/remotes/srm7500.conf
 etc/lirc/remotes/tigerfly.xml
-etc/lirc/remotes/x10-or32e.conf
+etc/lirc/remotes/x10*.conf
 etc/lirc/remotes/xbox.conf
 etc/lirc/hardware/custom.conf
 etc/lirc/hardware/default.conf
