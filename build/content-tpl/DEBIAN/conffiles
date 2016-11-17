@@ -1,3 +1,4 @@
+etc/default/lirc
 etc/default/iguanaIR
 etc/lirc/lircd.conf
 etc/lirc/lircmd.conf
