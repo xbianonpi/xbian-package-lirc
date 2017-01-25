@@ -4,7 +4,7 @@ config_build_targets=
 config_install_targets=install
 config_deb_contentclean=yes
 config_wrapper=build.package
-config_deb_depends=upstart
+config_deb_depends=\${shlibs:Depends}
 config_source_type=tar
 config_source_addr=http://archive.ubuntu.com/ubuntu/pool/main/l/lirc/lirc_0.9.0.orig.tar.bz2
 
