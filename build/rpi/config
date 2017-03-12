@@ -1,2 +1,1 @@
-config_source_configure=./configure --with-driver=userspace
-config_build_env=schroot -c armhfjessiev6 -p --
+config_build_env=schroot -c armhf${config_os_version}v6 -p --
